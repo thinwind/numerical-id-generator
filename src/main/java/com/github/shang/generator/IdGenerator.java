@@ -9,8 +9,8 @@ import org.slf4j.LoggerFactory;
 
 public class IdGenerator {
 	private static final Logger LOG = LoggerFactory.getLogger(IdWorker.class);
-	private final static int datacenterId;
-	private final static int workerId;
+	private static int datacenterId;
+	private static int workerId;
 	private static final Properties prop;
 	
 	private static final IdWorker idWorker;
@@ -26,7 +26,11 @@ public class IdGenerator {
 			datacenterId=Integer.parseInt(prop.getProperty("datacenter_id"));
 			workerId=Integer.parseInt(prop.getProperty("worder_id"));
 		} catch (Exception e) {
-			throw new RuntimeException("id生成器配置读取失败");
+			//datacenterId 默认为0
+			datacenterId=0;
+			//workerId 默认为1
+			workerId=1;
+			LOG.warn("ID生成器配置读取失败，使用默认值: datacenterId=0，workerId=1，建议检查后重新启动应用");
 		}finally{
 			if(in!=null){
 				try {

@@ -5,7 +5,11 @@
 
 ---------
 
-1. 修改[id-gen.properties](src/main/resources/id-gen.properties)中的参数
+0. 在项目跟目录下创建id-gen.properties,一般会与log4j.properties同级即可
+
+   创建后添加两个参数，可以参见测试[demo](src/test/resources/id-gen.properties)
+
+1. 修改[id-gen.properties](src/test/resources/id-gen.properties)中的参数
     
     参数 | 含义
     ---- | ----
