@@ -5,7 +5,7 @@
 
 ---------
 
-0. 在项目跟目录下创建id-gen.properties,一般会与log4j.properties同级即可
+0. 在项目根目录下创建id-gen.properties,一般与log4j.properties在同一目录
 
    创建后添加两个参数，可以参见测试[demo](src/test/resources/id-gen.properties)
 
@@ -33,7 +33,7 @@
            
            
 
-## 原理介绍: 
+## 原理介绍
 
 --------
 
