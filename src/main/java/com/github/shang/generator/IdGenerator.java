@@ -3,6 +3,7 @@ package com.github.shang.generator;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -70,4 +71,26 @@ public class IdGenerator {
 	public static long nextId(long tag){
 		return instaIdGenerator.nextId(tag);
 	}
+	
+	/**
+     * 获取uuid
+     *
+     * @return uuid
+     */
+    public static String getUUID(boolean ignoreHyphen) {
+    	String uuid=UUID.randomUUID().toString();
+    	if(ignoreHyphen){
+    		return uuid.replaceAll("-", "");
+    	}else
+    		return uuid;
+    }
+    
+    /**
+     * 获取uuid
+     *
+     * @return uuid
+     */
+    public static String getUUID() {
+    	return getUUID(true);
+    }
 }
