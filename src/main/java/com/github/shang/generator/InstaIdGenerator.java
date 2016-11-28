@@ -17,27 +17,27 @@ public class InstaIdGenerator {
 	/**
 	 * 时间戳的位数，实际占41位，最高位保持为0，保证long值为正数
 	 */
-	private int timestampBitCount = 42;
+	public static final int timestampBitCount = 42;
 
 	/**
 	 * 逻辑分片位数
 	 */
-	private int regionBitCount = 10;
+	public static final int regionBitCount = 10;
 
 	/**
 	 * 逻辑分片的最大数量
 	 */
-	private int regionModelVal = 1 << regionBitCount;
+	public static final int regionModelVal = 1 << regionBitCount;
 
 	/**
 	 * 序列位数
 	 */
-	private int sequenceBitCount = 12;
+	public static final int sequenceBitCount = 12;
 
 	/**
 	 * 总的位数
 	 */
-	private int totalBitCount = timestampBitCount + regionBitCount + sequenceBitCount;
+	public static final int totalBitCount = timestampBitCount + regionBitCount + sequenceBitCount;
 
 	/**
 	 * 当前序列值
