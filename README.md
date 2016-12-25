@@ -37,6 +37,6 @@
 
 --------
 
-**[数值型ID生成器](http://www.jianshu.com/p/d76e86fdf045)**
+**[数值型ID生成器](http://www.shangyh.win/java/2016/12/24/java-%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%80%BC%E5%9E%8B-id-%E7%94%9F%E6%88%90%E6%96%B9%E6%A1%88.html)**
 
 
