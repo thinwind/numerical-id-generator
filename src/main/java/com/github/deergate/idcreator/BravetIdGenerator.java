@@ -1,4 +1,4 @@
-package com.github.deerdate.idcreator;
+package com.github.deergate.idcreator;
 
 /**
  * 基于Snowflake的ID生成器

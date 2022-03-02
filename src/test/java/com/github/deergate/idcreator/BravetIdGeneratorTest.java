@@ -1,7 +1,7 @@
 /* 
  * Copyright 2022 Shang Yehua <niceshang@outlook.com>
  */
-package com.github.deerdate.idcreator;
+package com.github.deergate.idcreator;
 
 import java.util.HashSet;
 import java.util.Set;
